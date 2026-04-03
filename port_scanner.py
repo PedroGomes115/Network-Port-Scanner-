@@ -2,16 +2,21 @@
 
 import socket
 from concurrent.futures import ThreadPoolExecutor
- # Banner 
 
-def banner():
-    print("---------------------------------------------")
-    print("               Network Scanner               ")
-    print("             Made by: Pedro Gomes            ")
-    print("---------------------------------------------")
+# Banner
+ 
+def banner_scanner():
+    title = "Port Scanner"
+    author = "Made by: Pedro Gomes"
+    width = max(len(title), len(author)) + 10  
+
+    print("-" * width)
+    print(title.center(width))
+    print(author.center(width))
+    print("-" * width)
     print("")
 
-banner()
+banner_scanner()
 
 # Variables
 
@@ -59,7 +64,6 @@ def main():
             print(f" - Port {port}")
     else:
         print("No open ports detected.")
-
 
 if __name__ == "__main__":
     main()
