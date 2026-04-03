@@ -1,49 +1,53 @@
+
 # Network Port Scanner
 
 A fast, multithreaded network port scanner written in Python that identifies open ports on a target host. This project demonstrates core cybersecurity and networking principles.
-.
-### Features
 
- Scans ports from 1 to 1024 (configurable)
- 
-Multithreaded scanning for improved performance
+---
 
- Uses TCP socket connections
- 
-Displays all open ports found
+## Features
 
-Clean and efficient code structure
-.
-### Technologies Used
+* Scans ports from 1 to 1024 (configurable)
+* Multithreaded scanning for improved performance
+* Uses TCP socket connections
+* Displays all open ports found
+* Clean and efficient code structure
 
-Python 3
+---
 
-socket (network communication)
+## Technologies Used
 
-concurrent.futures (multithreading)
-.
-### How It Works
+* Python 3
+* socket (network communication)
+* concurrent.futures (multithreading)
 
-Prompts the user to enter a target IP address
+---
 
-Attempts to connect to each port in the specified range
+## How It Works
 
-Uses multiple threads to speed up scanning
+* Prompts the user to enter a target IP address
+* Attempts to connect to each port in the specified range
+* Uses multiple threads to speed up scanning
+* Identifies open ports based on successful connections
+* Outputs a list of all detected open ports
 
-Identifies open ports based on successful connections
+---
 
-Outputs a list of all detected open ports
-.
-### How to Run
+## How to Run
 
-Make sure Python 3 is installed
+* Make sure Python 3 is installed
+* Save the script as `port_scanner.py`
+* Run the program:
 
-Save the script as port_scanner.py
+```bash
+python port_scanner.py
+```
 
-Run the program: python port_scanner.py
+* Enter the target IP address when prompted
 
-Enter the target IP address when prompted
-.
-## Disclaimer
+---
+
+### Disclaimer
+
 This tool is intended for educational purposes only.
 Only scan systems you own or have explicit permission to test.
